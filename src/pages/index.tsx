@@ -20,7 +20,7 @@ export default function Home() {
     const [history, setHistory] = useState<{ vibe: string; colors: string[] }[]>([
         { vibe: 'default', colors: placeholder },
     ]);
-    const [value, setValue] = useState<string>('forest');
+    const [value, setValue] = useState<string>('');
     const [isLoading, setIsLoading] = useState<boolean>(false);
 
     const handleClick = () => {
@@ -45,7 +45,7 @@ export default function Home() {
                         <Input
                             value={value}
                             onChange={event => setValue(event.target.value)}
-                            placeholder='forest'
+                            placeholder='vibe'
                         />
                         <Button onClick={handleClick} isLoading={isLoading}>
                             Generate
