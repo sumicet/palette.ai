@@ -3,7 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next';
 import { ChatGPTAPI, ChatMessage } from 'chatgpt';
 
 const api = new ChatGPTAPI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.OPENAI_API_KEY as string,
 });
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse<ChatMessage>) {
