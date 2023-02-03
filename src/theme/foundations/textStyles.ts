@@ -14,10 +14,28 @@ export const textStyles = {
         fontSize: '16px',
         lineHeight: '19px',
     },
+    bodyBold: {
+        fontFamily: 'sourceCodePro',
+        fontWeight: 700,
+        fontSize: '16px',
+        lineHeight: '19px',
+    },
     small: {
         fontFamily: 'sourceCodePro',
         fontWeight: 400,
-        fontSize: '14px',
+        fontSize: '12px',
+        lineHeight: '16.8px',
+    },
+    smallBold: {
+        fontFamily: 'sourceCodePro',
+        fontWeight: 700,
+        fontSize: '12px',
+        lineHeight: '16.8px',
+    },
+    extraSmall: {
+        fontFamily: 'sourceCodePro',
+        fontWeight: 400,
+        fontSize: '10px',
         lineHeight: '16.8px',
     },
 };

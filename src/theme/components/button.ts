@@ -5,19 +5,15 @@ import { mode } from '@chakra-ui/theme-tools';
 
 export const Button: ComponentStyleConfig = {
     baseStyle: props => ({
-        boxSize: 32,
+        height: 'space40',
         borderRadius: 'radius5',
         _disabled: {
             opacity: 0.5,
             cursor: 'auto',
         },
-        bgColor: mode('secondary.light', 'secondary.dark')(props),
+        color: mode('primary.dark', 'primary.light')(props),
+        textStyle: 'bodyBold',
+        paddingX: 'space8',
+        bgColor: mode('divider.light', 'divider.dark')(props),
     }),
-    variants: {
-        square: {
-            alignItems: 'center',
-            justifyContent: 'center',
-            display: 'flex',
-        },
-    },
 };
